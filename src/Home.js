@@ -30,7 +30,7 @@ function ImageUpload() {
 
     try {
       // Send the image to the FastAPI backend using Axios
-      const response = await axios.post('http://127.0.0.1:8000/detect/', formData, {
+      const response = await axios.post('https://jfyynco025hboz-8000.proxy.runpod.net/detect/', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
